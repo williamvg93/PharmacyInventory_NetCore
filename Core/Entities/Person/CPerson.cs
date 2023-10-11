@@ -24,7 +24,7 @@ public class CPerson : BaseEntity
     /* --------------------------------- */
     /* Foreign Key for Type Person */
     public int IdTypePersonFk { get; set; }
-    public TypePerson TypePersons { get; set; }
+    public TypePerson TypePeople { get; set; }
 
     /* Relationship whit Address -> One to Many */
     public ICollection<Address> Addresses { get; set; }
@@ -33,7 +33,7 @@ public class CPerson : BaseEntity
     public ICollection<InventoryManagement> InventoryManagements { get; set; }
     /* --------------------------------- */
     /* Relationship whit TypeContacts -> Many to Many */
-    public ICollection<TypeContact> TypeContacts { get; set; }
+    public ICollection<PersonContact> PersonContacts { get; set; }
     /* --------------------------------- */
 
 }

@@ -10,7 +10,7 @@ public class TypeContact : BaseEntity
     public string Name { get; set; }
 
     /*   Relationship whit Person -> Many to Many    */
-    public ICollection<CPerson> People { get; set; }
+    public ICollection<PersonContact> PersonContacts { get; set; }
 
     /* -------------------------------------------- */
 }

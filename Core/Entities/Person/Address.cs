@@ -9,7 +9,7 @@ namespace Core.Entities.Person;
 public class Address : BaseEntity
 {
     public string RoadType { get; set; }
-    public int FirstNumber { get; set; }
+    public short FirstNumber { get; set; }
     public string FirstLetter { get; set; }
     public string Bis { get; set; }
     public string SecondLetter { get; set; }
