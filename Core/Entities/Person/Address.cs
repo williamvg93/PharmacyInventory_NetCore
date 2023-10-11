@@ -14,9 +14,9 @@ public class Address : BaseEntity
     public string Bis { get; set; }
     public string SecondLetter { get; set; }
     public string Cardinal { get; set; }
-    public int SecondNumber { get; set; }
+    public short SecondNumber { get; set; }
     public string ThirdLetter { get; set; }
-    public int ThirdNumber { get; set; }
+    public short ThirdNumber { get; set; }
     public string SecondCardinal { get; set; }
     public string Complement { get; set; }
 

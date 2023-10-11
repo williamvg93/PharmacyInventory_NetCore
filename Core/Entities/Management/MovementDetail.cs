@@ -8,7 +8,7 @@ namespace Core.Entities.Management;
 
 public class MovementDetail : BaseEntity
 {
-    public int QuantityUnits { get; set; }
+    public ushort QuantityUnits { get; set; }
     public double Price { get; set; }
 
     /* Foreign Key for Inventory Management */

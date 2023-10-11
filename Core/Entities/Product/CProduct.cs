@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Core.Entities.Inventory;
 
 namespace Core.Entities.Product;
 
@@ -17,4 +18,6 @@ public class CProduct : BaseEntity
     public ProductBrand ProductBrands { get; set; }
     /* --------------------------------- */
 
+    /*    Relationship whit CInventory -> One to Many    */
+    public ICollection<CInventory> Inventories { get; set; }
 }

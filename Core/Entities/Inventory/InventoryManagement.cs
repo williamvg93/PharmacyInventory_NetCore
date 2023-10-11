@@ -32,7 +32,7 @@ public class InventoryManagement : BaseEntity
     /* ----------------------------------------- */
 
     /* Relationship whit CInventory -> Many to Many */
-    public ICollection<CInventory> Inventories { get; set; }
+    public ICollection<MovementDetail> MovementDetails { get; set; }
     /* ----------------------------------------- */
 
 }
