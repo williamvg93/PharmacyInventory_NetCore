@@ -6,13 +6,13 @@ using Core.Entities.Location;
 using Core.Interfaces.Location;
 using Infrastructure.Data;
 
-namespace Infrastructure.Repositories.Location;
+namespace Infrastructure.Repositories.Inventory;
 
-public class CityRepo : GenericRepository<City>, ICity
+public class CInvenMangRepo : GenericRepository<City>, ICity
 {
     private readonly PharmaInventContext _context;
 
-    public CityRepo(PharmaInventContext context) : base(context)
+    public CInvenMangRepo(PharmaInventContext context) : base(context)
     {
         _context = context;
     }

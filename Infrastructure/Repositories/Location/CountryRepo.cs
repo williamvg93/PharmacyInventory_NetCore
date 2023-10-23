@@ -12,7 +12,7 @@ public class CountryRepo : GenericRepository<Country>, ICountry
 {
     private readonly PharmaInventContext _context;
 
-    public AuditorRepo(PharmaInventContext context) : base(context)
+    public CountryRepo(PharmaInventContext context) : base(context)
     {
         _context = context;
     }

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Core.Entities.Location;
 
-namespace Core.Interfaces.location;
+namespace Core.Interfaces.Location;
 
-public interface IDepartment : IGenericRepository<Department>
+public interface ICountry : IGenericRepository<Country>
 {
 
 }

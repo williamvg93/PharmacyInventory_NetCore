@@ -6,13 +6,13 @@ using Core.Entities.Location;
 using Core.Interfaces.Location;
 using Infrastructure.Data;
 
-namespace Infrastructure.Repositories.Location;
+namespace Infrastructure.Repositories.Management;
 
-public class CityRepo : GenericRepository<City>, ICity
+public class PaymentRepo : GenericRepository<City>, ICity
 {
     private readonly PharmaInventContext _context;
 
-    public CityRepo(PharmaInventContext context) : base(context)
+    public PaymentRepo(PharmaInventContext context) : base(context)
     {
         _context = context;
     }

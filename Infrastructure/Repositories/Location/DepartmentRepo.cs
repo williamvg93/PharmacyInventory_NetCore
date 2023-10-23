@@ -12,7 +12,7 @@ public class DepartmentRepo : GenericRepository<Department>, IDepartment
 {
     private readonly PharmaInventContext _context;
 
-    public AuditorRepo(PharmaInventContext context) : base(context)
+    public DepartmentRepo(PharmaInventContext context) : base(context)
     {
         _context = context;
     }
