@@ -10,11 +10,11 @@ using Infrastructure.Data;
 
 namespace Infrastructure.Repositories.Inventory;
 
-public class CInvenMangRepo : GenericRepository<InventoryManagement>, IInventoryManagement
+public class InvenMangRepo : GenericRepository<InventoryManagement>, IInventoryManagement
 {
     private readonly PharmaInventContext _context;
 
-    public CInvenMangRepo(PharmaInventContext context) : base(context)
+    public InvenMangRepo(PharmaInventContext context) : base(context)
     {
         _context = context;
     }

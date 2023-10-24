@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Core.Entities.Location;
+using Core.Entities.Management;
 using Core.Interfaces.Location;
+using Core.Interfaces.Management;
 using Infrastructure.Data;
 
 namespace Infrastructure.Repositories.Management;
 
-public class InvoiceRepo : GenericRepository<City>, ICity
+public class InvoiceRepo : GenericRepository<Invoice>, IInvoice
 {
     private readonly PharmaInventContext _context;
 
