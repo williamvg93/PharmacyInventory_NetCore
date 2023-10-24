@@ -6,7 +6,7 @@ using Core.Entities.Inventory;
 
 namespace Core.Interfaces.Inventory;
 
-public interface CInventoryManagement : IGenericRepository<InventoryManagement>
+public interface IInventoryManagement : IGenericRepository<InventoryManagement>
 {
 
 }
