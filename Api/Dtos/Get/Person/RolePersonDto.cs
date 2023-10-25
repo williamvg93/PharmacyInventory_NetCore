@@ -4,7 +4,6 @@ using System.Linq;
 using System.Threading.Tasks;
 
 namespace Api.Dtos.Get.Person;
-
 public class RolePersonDto
 {
     public int Id { get; set; }

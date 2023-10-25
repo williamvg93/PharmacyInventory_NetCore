@@ -2,10 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Core.Entities.Location;
 
 namespace Api.Dtos.Get.Person;
-
 public class AddressDto
 {
     public int Id { get; set; }

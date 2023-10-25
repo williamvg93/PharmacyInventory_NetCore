@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Core.Entities.Person;
 
 namespace Api.Dtos.Get.Location;
 public class CityDto

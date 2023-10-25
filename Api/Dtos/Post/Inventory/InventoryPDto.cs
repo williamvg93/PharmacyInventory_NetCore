@@ -2,11 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Core.Entities.Management;
-using Core.Entities.Product;
 
 namespace Api.Dtos.Post.Inventory;
-
 public class InventoryPDto
 {
     public int Id { get; set; }

@@ -3,14 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Core.Entities.Inventory;
-using Core.Entities.Person;
 
-namespace Api.Dtos.Get.Person;
+namespace Api.Dtos.Post.Product;
 
-public class CPersonDto
+public class ProductPDto
 {
     public int Id { get; set; }
     public string Code { get; set; }
     public string Name { get; set; }
-    public DateTime RegistreDate { get; set; }
+    public int IdProdBrandFk { get; set; }
 }

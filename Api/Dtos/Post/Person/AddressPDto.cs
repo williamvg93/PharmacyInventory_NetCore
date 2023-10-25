@@ -2,12 +2,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Core.Entities.Location;
 
-namespace Core.Entities.Person;
+namespace Api.Dtos.Post.Person;
 
-public class Address : BaseEntity
+public class AddressPDto
 {
+    public int Id { get; set; }
     public string RoadType { get; set; }
     public short FirstNumber { get; set; }
     public string FirstLetter { get; set; }
@@ -19,14 +19,6 @@ public class Address : BaseEntity
     public short ThirdNumber { get; set; }
     public string SecondCardinal { get; set; }
     public string Complement { get; set; }
-
-    /* Foreign Key for Person */
     public int IdPersonFk { get; set; }
-    public CPerson People { get; set; }
-    /* --------------------------------- */
-    /* Foreign Key for City */
     public int IdCityFk { get; set; }
-    public City Cities { get; set; }
-    /* --------------------------------- */
-
 }
