@@ -12,7 +12,9 @@ public class City : BaseEntity
     /* --------- Foreign Keys ---------- */
 
     /* Foreign Key for Department */
-    
+    public int IdDepartFk { get; set; }
+    public Department Department { get; set; }
+
     /* --------------------------------- */
 
     /*    Relationship whit Address -> One to Many    */

@@ -24,7 +24,7 @@ public class CityConfig : IEntityTypeConfiguration<City>
         .HasMaxLength(50);
 
         /* Assign Foreign Key */
-        builder.HasOne(fk => fk.Departments)
+        builder.HasOne(fk => fk.Department)
         .WithMany(fk => fk.Cities)
         .HasForeignKey(fk => fk.IdDepartFk);
     }
