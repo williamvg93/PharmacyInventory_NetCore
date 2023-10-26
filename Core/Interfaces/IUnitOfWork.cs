@@ -20,7 +20,7 @@ public interface IUnitOfWork
     IInvoice Invoices { get; }
     IMovementDetail MovemDetails { get; }
     IMovementType MovemTypes { get; }
-    IPaymentMethod PaymMethods { get; }
+    IPaymentMethod PayMethods { get; }
     IAddress Addresses { get; }
     ICPerson People { get; }
     IDocumentType DocumTypes { get; }
