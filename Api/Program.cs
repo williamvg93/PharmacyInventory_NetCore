@@ -1,5 +1,8 @@
+using System.Reflection;
 using Api.Extensions;
 using AspNetCoreRateLimit;
+using Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,6 +21,16 @@ builder.Services.ConfigureCors();
 
 /* Add Config RAte Limiting */
 builder.Services.ConfigureRatelimiting();
+
+/* Add AutoMApper */
+builder.Services.AddAutoMapper(Assembly.GetEntryAssembly());
+
+/* Add Db Conection */
+builder.Services.AddDbContext<PharmaInventContext>(options =>
+{
+    string connectionStrings = builder.Configuration.GetConnectionString("MysqlConnec");
+    options.UseMySql(connectionStrings, ServerVersion.AutoDetect(connectionStrings));
+});
 
 var app = builder.Build();
 
