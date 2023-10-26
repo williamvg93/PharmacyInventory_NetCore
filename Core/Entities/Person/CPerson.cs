@@ -30,7 +30,8 @@ public class CPerson : BaseEntity
     public ICollection<Address> Addresses { get; set; }
     /* --------------------------------- */
     /* Relationship whit Inventory Manage -> One to Many */
-    public ICollection<InventoryManagement> InventoryManagements { get; set; }
+    public ICollection<InventoryManagement> InventoryManagementsSeller { get; set; }
+    public ICollection<InventoryManagement> InventoryManagementsReci { get; set; }
     /* --------------------------------- */
     /* Relationship whit TypeContacts -> Many to Many */
     public ICollection<PersonContact> PersonContacts { get; set; }

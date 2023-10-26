@@ -137,7 +137,7 @@ public class UnitOfWork : IUnitOfWork, IDisposable
             return _moveTypes;
         }
     }
-    public IPaymentMethod PaymMethods
+    public IPaymentMethod PayMethods
     {
         get
         {

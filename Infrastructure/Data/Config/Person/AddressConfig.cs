@@ -25,7 +25,7 @@ public class AddressConfig : IEntityTypeConfiguration<Address>
 
         builder.Property(fn => fn.FirstNumber)
         .IsRequired()
-        .HasColumnType("short");
+        .HasColumnType("smallint");
 
         builder.Property(fl => fl.FirstLetter)
         .IsRequired()
@@ -41,13 +41,13 @@ public class AddressConfig : IEntityTypeConfiguration<Address>
         .HasMaxLength(4);
 
         builder.Property(sn => sn.SecondNumber)
-        .HasColumnType("short");
+        .HasColumnType("smallint");
 
         builder.Property(tl => tl.ThirdLetter)
         .HasMaxLength(2);
 
         builder.Property(tn => tn.ThirdNumber)
-        .HasColumnType("short");
+        .HasColumnType("smallint");
 
         builder.Property(sc => sc.SecondCardinal)
         .HasMaxLength(2);

@@ -21,7 +21,7 @@ public class MovementDetConfig : IEntityTypeConfiguration<MovementDetail>
         /* Assign Colums */
         builder.Property(qu => qu.QuantityUnits)
         .IsRequired()
-        .HasColumnType("ushort");
+        .HasColumnType("smallint");
 
         builder.Property(p => p.Price)
         .IsRequired()

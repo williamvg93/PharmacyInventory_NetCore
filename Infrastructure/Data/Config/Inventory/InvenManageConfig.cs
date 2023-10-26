@@ -30,11 +30,11 @@ public class InvenManageConfig : IEntityTypeConfiguration<InventoryManagement>
         /* Assign Foreign Key */
         /* ----------------------------------------- */
         builder.HasOne(fk => fk.PeopleSellers)
-        .WithMany(fk => fk.InventoryManagements)
+        .WithMany(fk => fk.InventoryManagementsReci)
         .HasForeignKey(fk => fk.IdPersSellerFk);
 
         builder.HasOne(fk => fk.PeopleReceive)
-        .WithMany(fk => fk.InventoryManagements)
+        .WithMany(fk => fk.InventoryManagementsSeller)
         .HasForeignKey(fk => fk.IdPersReciFk);
 
         builder.HasOne(fk => fk.MovementTypes)

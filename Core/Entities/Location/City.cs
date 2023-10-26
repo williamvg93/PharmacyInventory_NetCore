@@ -8,7 +8,7 @@ namespace Core.Entities.Location;
 
 public class City : BaseEntity
 {
-    public nuint Name { get; set; }
+    public string Name { get; set; }
     /* --------- Foreign Keys ---------- */
 
     /* Foreign Key for Department */
